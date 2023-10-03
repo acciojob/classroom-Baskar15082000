@@ -1,10 +1,12 @@
 package com.driver;
 
+import org.springframework.stereotype.Repository;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
+@Repository
 public class StudentRepository {
     HashMap<String,Student>student=new HashMap<>();
     HashMap<String,Teacher>teacher=new HashMap<>();
