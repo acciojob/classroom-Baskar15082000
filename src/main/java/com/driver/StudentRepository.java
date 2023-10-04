@@ -48,7 +48,7 @@ public class StudentRepository {
         return list;
     }
     public void deleteteacher(String name){
-      //  teacher.remove(name);
+        teacher.remove(name);
         student_teacher.remove(name);
 
     }
