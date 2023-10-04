@@ -31,13 +31,15 @@ public class StudentRepository {
 
     }
     public Student getstudent(String name){
+        if(!student.containsKey(name))return null;
         return student.get(name);
     }
     public Teacher getteacher(String name){
+        if(!teacher.containsKey(name))return null;
         return teacher.get(name);
     }
     public List<String> getallstudentbyteacher(String name){
-
+        if(!student_teacher.containsKey(name))return null;
         return student_teacher.get(name);
     }
     public List<String> getallstudent(){
